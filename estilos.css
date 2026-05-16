@@ -18,11 +18,16 @@ body {
 }
 
 nav {
-  background: #07011a;
+  background-color: #000;   
+    padding: 15px 20px;        
+    margin-bottom: 20px;
 }
 
-
-
+label h1 {
+  margin: 0;
+  font-size: 30px;
+  color: white;
+}
 
 
 #menu-toggle {
