@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #000000;
+        }
+
+        header {
+            background-color: #111827;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card {
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #0077b6;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+    .volver {
+      margin-start: auto;
+    display: block;
+    color: rgb(0, 0, 0);
+    background-color: #fcff32;
+    padding: 8px 16px;
+    border-radius: 6px;
+    }
+    
+
+
+    </style>
+</head>
+<body>
+ 
+
+<header>
+    
+<button onclick="window.location.href='MUNDIAL.html'" class="volver">
+    VOLVER
+</button>
+
+
+
+    <h1>Sedes e Historia de los Mundiales</h1>
+    <div class="container mt-4">
+    <input 
+        type="text" 
+        id="buscador" 
+        class="form-control" 
+        placeholder="Buscar Mundial (ej: 2022, Argentina, Brasil...)"
+        onkeyup="buscarMundiales()"
+    >
+</div>
+</header>
+
+<div class="container mt-4  mundial mb-5">
+    <div class="row g-4">
+
+        <!-- 1930 -->
+       <div class="col-md-4 mundial">
+            <div class="card">
+                <img src="1930Uruguay.png" >
+                <div class="card-body">
+                    <h5 id="m1930">1930 - Uruguay</h5>
+                    <p>Fue el primer Mundial de la historia, organizado por Uruguay para celebrar el centenario de su independencia. Solo participaron 13 equipos debido a las dificultades de viaje. La final enfrentó a Uruguay y Argentina en un clima de gran rivalidad, y los locales ganaron 4-2 en el Estadio Centenario, convirtiéndose en los primeros campeones del mundo.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1934 -->
+        <div class="col-md-4 mundial">
+            <div class="card">
+                <img src="1934 - Italia.png" >
+                <div class="card-body">
+                    <h5 id="1934">1934 - Italia</h5>
+                    <p>Este Mundial fue el primero con fase clasificatoria previa y formato de eliminación directa. Italia se consagró campeón en un torneo marcado por la influencia política del régimen de Mussolini. La final contra Checoslovaquia se definió en tiempo extra, consolidando a Italia como una potencia emergente.<br><br></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1938 -->
+        <div class="col-md-4 mundial">
+            <div class="card">
+                <img src="1938 - Francia.png">
+                <div class="card-body">
+                    <h5 id="m1938">1938 - Francia</h5>
+                    <p>Italia logró el bicampeonato en un contexto mundial tenso, previo a la Segunda Guerra Mundial. Muchos equipos enfrentaron dificultades políticas y económicas. Brasil comenzó a destacarse como potencia futbolística, mostrando un estilo ofensivo que marcaría su historia.<br><br><br></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1950 -->
+        <div class="col-md-4 mundial">
+            <div class="card">
+                <img src="Brasil1950.png">
+                <div class="card-body">
+                    <h5 id="m1950">1950 - Brasil</h5>
+                    <p>Recordado por el “Maracanazo”, este Mundial no tuvo final tradicional sino un grupo decisivo. Brasil era el gran favorito y solo necesitaba empatar, pero Uruguay sorprendió ganando 2-1 en un estadio Maracaná repleto. Este resultado es considerado uno de los mayores impactos en la historia del deporte.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1954 -->
+        <div class="col-md-4 mundial">
+            <div class="card">
+                <img src="1954 - Suiza.jpg">
+                <div class="card-body">
+                    <h5 id="m1954">1954 - Suiza</h5>
+                    <p>Hungría llegaba como favorita tras una racha invicta impresionante, pero Alemania Occidental logró una remontada histórica en la final, ganando 3-2. Este partido, conocido como el “Milagro de Berna”, simboliza una de las mayores sorpresas del fútbol mundial.<br><br><br></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1978 -->
+        <div class="col-md-4 mundial">
+            <div class="card">
+                <img src="d:\trabMudial\1978 - Argentina.jpg">
+                <div class="card-body">
+                    <h5 id="m1978">1978 - Argentina</h5>
+                    <p>Argentina ganó su primer Mundial jugando como local. El equipo, liderado por Mario Kempes, venció a Países Bajos en la final. El torneo se desarrolló en un contexto político complejo, pero en lo deportivo significó un momento histórico para el país.<br><br><br></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1982 -->
+       <div class="col-md-4 mundial">
+            <div class="card">
+                <img src="1982 - España">
+                <div class="card-body">
+                    <h5 id="m1982">1982 - España</h5>
+                    <p>Este Mundial amplió la participación a 24 equipos. Italia, que había comenzado con dudas, terminó coronándose campeón gracias a una destacada actuación de Paolo Rossi, quien fue el máximo goleador del torneo.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1994 -->
+       <div class="col-md-4 mundial">
+            <div class="card">
+                <img src="1994 - Estados Unidos.jpg">
+                <div class="card-body">
+                    <h5 id="m1994">1994 - Estados Unidos</h5>
+                    <p>Fue un Mundial muy exitoso en términos de público y organización. La final entre Brasil e Italia terminó sin goles y se definió por penales. Roberto Baggio falló el último disparo, dándole a Brasil su cuarto título mundial.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2010 -->
+       <div class="col-md-4 mundial">
+            <div class="card">
+                <img src="2010 - Sudáfrica.jpg">
+                <div class="card-body">
+                    <h5 id="m2010">2010 - Sudáfrica</h5>
+                    <p>Primer Mundial en África. España logró su primer campeonato con un estilo de juego basado en la posesión. El gol de Andrés Iniesta en la final ante Países Bajos quedó grabado como uno de los momentos más importantes del fútbol moderno.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2018 -->
+        <div class="col-md-4 mundial">
+            <div class="card">
+                <img src="2018 - Rusia.jpg">
+                <div class="card-body">
+                    <h5 id="m2018">2018 - Rusia</h5>
+                    <p>Francia conquistó su segundo título mundial con un equipo joven y dinámico. Croacia fue la gran sorpresa al llegar a la final. Kylian Mbappé brilló como una de las nuevas estrellas del fútbol internacional.<br><br></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2022 -->
+        <div class="col-md-4 mundial">
+            <div class="card">
+                <img src="2022 - Qatar.jpg">
+                <div class="card-body">
+                    <h5 id="m2022">2022 - Qatar</h5>
+                    <p>Considerado uno de los mejores Mundiales de la historia. Argentina ganó una final épica contra Francia tras empatar 3-3 y definir por penales. Lionel Messi logró finalmente levantar la Copa del Mundo, cerrando una carrera legendaria.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2026 -->
+        <div class="col-md-4 mundial">
+            <div class="card">
+                <img src="2026 - Próximamente.jpg">
+                <div class="card-body">
+                    <h5 id="m2026">2026 - Próximamente</h5>
+                    <p>Será el Mundial más grande de la historia con 48 equipos y tres países organizadores: Estados Unidos, México y Canadá. Este nuevo formato busca ampliar la participación y generar un torneo aún más global.<br><br></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+<script>
+function buscarMundiales() {
+    let input = document.getElementById("buscador").value.toLowerCase();
+    let tarjetas = document.getElementsByClassName("mundial");
+
+    for (let i = 0; i < tarjetas.length; i++) {
+        let texto = tarjetas[i].innerText.toLowerCase();
+
+        if (texto.includes(input)) {
+            tarjetas[i].style.display = "";
+        } else {
+            tarjetas[i].style.display = "none";
+        }
+    }
+}
+
+
+</script>
