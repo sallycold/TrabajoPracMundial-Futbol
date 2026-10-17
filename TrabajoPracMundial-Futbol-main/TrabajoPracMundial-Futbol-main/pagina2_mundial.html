@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mundiales</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+}
+
+/* HEADER */
+
+header{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.volver{
+    background:#fcff32;
+    color:black;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+    margin-bottom:15px;
+     position:absolute;
+    left:20px;
+    top:20px;
+}
+
+.buscador{
+    width:320px;
+    max-width:90%;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    margin-top:15px;
+}
+
+
+
+.container{
+    padding:20px;
+}
+
+
+.row{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+    gap:20px;
+}
+
+
+
+.mundial{
+    background:#fcff32;
+    border:2px solid black;
+    border-radius:20px;
+    overflow:hidden;
+    padding:15px;
+    transition:0.3s;
+}
+
+.mundial:hover{
+    transform:scale(1.02);
+}
+
+.mundial img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.mundial h3{
+    margin-top:15px;
+    font-size:24px;
+}
+
+.mundial p{
+    line-height:1.5;
+    text-align:justify;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<button onclick="window.location.href='MUNDIAL.html'" class="volver">
+VOLVER
+</button>
+
+<h1>Sedes e Historia de los Mundiales</h1>
+
+<input
+type="text"
+id="buscador"
+class="buscador"
+placeholder="Buscar Mundial..."
+onkeyup="buscarMundiales()">
+
+</header>
+
+<div class="container">
+
+<div class="row">
+
+<!-- 1930 -->
+
+<div class="mundial">
+<img src="1930Uruguay.png">
+
+<h3>1930 - Uruguay</h3>
+
+<p>
+Fue el primer Mundial de la historia, organizado por Uruguay
+para celebrar el centenario de su independencia.
+Participaron solamente 13 selecciones debido a las dificultades
+de viaje de la época. La final enfrentó a Uruguay y Argentina
+en el Estadio Centenario. Uruguay ganó 4-2 y se convirtió
+en el primer campeón del mundo.
+</p>
+</div>
+
+<!-- 1934 -->
+
+<div class="mundial">
+<img src="1934 - Italia.png">
+
+<h3>1934 - Italia</h3>
+
+<p>
+Fue el primer Mundial con fase clasificatoria previa y formato
+de eliminación directa. Italia se coronó campeón en un torneo
+marcado por la influencia política del régimen de Mussolini.
+La final contra Checoslovaquia se decidió en tiempo extra.
+</p>
+</div>
+
+<!-- 1938 -->
+
+<div class="mundial">
+<img src="1938 - Francia.png">
+
+<h3>1938 - Francia</h3>
+
+<p>
+Italia consiguió el bicampeonato en un contexto mundial muy
+tenso previo a la Segunda Guerra Mundial. Brasil comenzó
+a destacarse como potencia futbolística mostrando un estilo
+de juego ofensivo que marcaría su historia.
+</p>
+</div>
+
+<!-- 1950 -->
+
+<div class="mundial">
+<img src="Brasil1950.png">
+
+<h3>1950 - Brasil</h3>
+
+<p>
+Recordado por el histórico “Maracanazo”.
+Brasil era el gran favorito y necesitaba solamente un empate,
+pero Uruguay sorprendió ganando 2-1 en el estadio Maracaná.
+Es considerado uno de los resultados más impactantes
+de la historia del fútbol.
+</p>
+</div>
+
+<!-- 1954 -->
+
+<div class="mundial">
+<img src="1954 - Suiza.jpg">
+
+<h3>1954 - Suiza</h3>
+
+<p>
+Hungría llegaba como favorita tras una racha invicta,
+pero Alemania Occidental logró una remontada histórica
+ganando 3-2 en la final. Este partido es conocido como
+el “Milagro de Berna”.
+</p>
+</div>
+
+<!-- 1978 -->
+
+<div class="mundial">
+<img src="1978 - Argentina.jpg">
+
+<h3>1978 - Argentina</h3>
+
+<p>
+Argentina ganó su primer Mundial jugando como local.
+El equipo liderado por Mario Kempes venció a Países Bajos
+en la final. El torneo se disputó en un contexto político
+complejo, pero fue un momento histórico para el fútbol argentino.
+</p>
+</div>
+
+<!-- 1982 -->
+
+<div class="mundial">
+<img src="1982 - España.jpg">
+
+<h3>1982 - España</h3>
+
+<p>
+Este Mundial amplió la participación a 24 selecciones.
+Italia se consagró campeón gracias a la gran actuación
+de Paolo Rossi, quien terminó como goleador del torneo.
+</p>
+</div>
+
+<!-- 1994 -->
+
+<div class="mundial">
+<img src="1994 - Estados Unidos.jpg">
+
+<h3>1994 - Estados Unidos</h3>
+
+<p>
+Fue uno de los Mundiales con mayor asistencia de público.
+La final entre Brasil e Italia terminó empatada y se definió
+por penales. Roberto Baggio falló el último disparo y Brasil
+ganó su cuarto título mundial.
+</p>
+</div>
+
+<!-- 2010 -->
+
+<div class="mundial">
+<img src="2010 - Sudáfrica.jpg">
+
+<h3>2010 - Sudáfrica</h3>
+
+<p>
+Primer Mundial realizado en África.
+España ganó su primera Copa del Mundo con un estilo
+de posesión de balón. Andrés Iniesta marcó el gol
+del triunfo en la final frente a Países Bajos.
+</p>
+</div>
+
+<!-- 2018 -->
+
+<div class="mundial">
+<img src="2018 - Rusia.jpg">
+
+<h3>2018 - Rusia</h3>
+
+<p>
+Francia consiguió su segundo título mundial con un equipo
+joven y dinámico. Croacia fue la gran sorpresa al llegar
+a la final. Kylian Mbappé se consolidó como una estrella mundial.
+</p>
+</div>
+
+<!-- 2022 -->
+
+<div class="mundial">
+<img src="2022 - Qatar.jpg">
+
+<h3>2022 - Qatar</h3>
+
+<p>
+Argentina ganó una final histórica contra Francia
+tras empatar 3-3 y vencer en los penales.
+Lionel Messi levantó finalmente la Copa del Mundo
+en uno de los mejores Mundiales de la historia.
+</p>
+</div>
+
+<!-- 2026 -->
+
+<div class="mundial">
+<img src="2026 - Próximamente.jpg">
+
+<h3>2026 - Estados Unidos, México y Canadá</h3>
+
+<p>
+Será el Mundial más grande de la historia con
+48 selecciones participantes y tres países organizadores.
+El nuevo formato busca ampliar la participación y
+hacer el torneo todavía más global.
+</p>
+</div>
+
+</div>
+</div>
+
+
+
+<script>
+
+function buscarMundiales(){
+
+    let input =
+    document.getElementById("buscador")
+    .value.toLowerCase();
+
+    let tarjetas =
+    document.getElementsByClassName("mundial");
+
+    for(let i=0; i<tarjetas.length; i++){
+
+        let texto =
+        tarjetas[i].innerText.toLowerCase();
+
+        if(texto.includes(input)){
+
+            tarjetas[i].style.display="block";
+
+        }else{
+
+            tarjetas[i].style.display="none";
+        }
+    }
+}
+
+</script>
+
+</body>
+</html>
+```
