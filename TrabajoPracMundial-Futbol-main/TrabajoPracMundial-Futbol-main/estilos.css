@@ -156,39 +156,120 @@ label{
 
 /* ---------------- ASIDE ---------------- */
 
-aside{
-     width:30%;
+.panel-estadisticas {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.bloque-stat {
+  background: #ffffff;
+  color: #0f172a;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.bloque-stat h3 {
+  margin: 0 0 12px;
+  font-size: 1.05rem;
+  border-bottom: 2px solid #eab308;
+  padding-bottom: 6px;
+}
+
+.tabla-stats {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.tabla-stats th,
+.tabla-stats td {
+  padding: 8px 6px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.tabla-stats th {
+  background: #f8fafc;
+  font-weight: 700;
 }
 
 /* ---------------- PREMIOS ---------------- */
 
-.contenedor-articulo{
-    display:flex;
-    align-items:center;
-    gap:25px;
-    background:#1e293b;
-    margin:30px;
-    padding:30px;
-    border-radius:20px;
-    transition:0.3s;
-    box-shadow:0 4px 15px rgba(0,0,0,0.4);
+.premios-mundial {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: system-ui, -apple-system, sans-serif;
 }
 
-.contenedor-articulo:hover{
-    transform:scale(1.01);
+.subtitulo-premios {
+  color: #64748b;
+  margin-bottom: 24px;
 }
 
-.imagenes_categ{
-    width:220px;
-    border-radius:20px;
+.grid-premios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
 }
 
-.contenedor-articulo h3{
-    color:#facc15;
-    margin-bottom:10px;
+.tarjeta-premio {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.tarjeta-premio:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 26px rgba(15, 23, 42, 0.12);
+}
 
+.premio-icono {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.premio-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+.tarjeta-premio h3 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+  color: #0f172a;
+}
+
+.tarjeta-premio p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* Detalles de color por premio */
+.premio-balon { border-top: 4px solid #eab308; }
+.premio-balon .premio-badge { background: #fef9c3; color: #854d0e; }
+
+.premio-bota { border-top: 4px solid #f59e0b; }
+.premio-bota .premio-badge { background: #fef3c7; color: #92400e; }
+
+.premio-guante { border-top: 4px solid #10b981; }
+.premio-guante .premio-badge { background: #d1fae5; color: #065f46; }
+
+.premio-joven { border-top: 4px solid #3b82f6; }
+.premio-joven .premio-badge { background: #dbeafe; color: #1e40af; }
 
 /* ---------------- FOOTER ---------------- */
 
